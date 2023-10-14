@@ -1,7 +1,8 @@
 {
   "index": "Introduction",
   "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  "basic-concept": "Basic Concepts",
+  "system-design": "System Design",
   "certifications": "Certifications",
   "about": {
     "title": "About",
