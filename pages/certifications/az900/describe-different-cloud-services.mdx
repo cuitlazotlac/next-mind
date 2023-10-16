@@ -1,0 +1,67 @@
+## Infrastructure-as-a-Service (IaaS)
+
+- closest to managing physical servers.
+- cloud provider will keep the hardware up-to-date.
+- but operating system maintenance and network configuration is up to you as the cloud tenant.
+
+| Advantages              |                                                                             Description                                                                              |
+| :---------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| No Capex                |                                                                     Users have no up-front costs                                                                     |
+| Agility                 |                                            Applications can be made accessible quickly, and deprovisioned whenever needed                                            |
+| Management              | The shared responsibility model applies; The user manages and maintains the services they have provisioned, the cloud manages and maintains the cloud infrastructure |
+| Consumption-based model |                                  Organizations pay only for what they use and operate under an Operational Expenditure (OpEx) model                                  |
+| Skills                  |                                                                No deep technical skills are required                                                                 |
+| Cloud benefits          |                         Org can use the skills and expertise of the cloud provider to ensure workloads are made secure and highly available                          |
+| Flexibility             |                          Most flexible cloud service because you have control to configure and manage the hardware running your application                          |
+
+## Platform-as-a-Service (PaaS)
+
+- cloud service model is a managed hosting environment.
+- cloud provider manages the virtual machines and networking resources.
+- cloud tenant deploys their applications into the managed hosting environment.
+- Azure App Services provides a managed hosting environment where developers can upload their web applications, without having to worry about the physical hardware and software requirements.
+
+| Advantages              |                                                     Description                                                     |
+| :---------------------- | :-----------------------------------------------------------------------------------------------------------------: |
+| No CapEx                |                                            Users have no up-front costs                                             |
+| Agility                 |          PaaS is more agile than IaaS, and users don't need to configure servers for running applications           |
+| Consumption-based model |                          Users pay only for what they use, and operate under an OpEx model                          |
+| Skills                  |                                        No deep technical skills are required                                        |
+| Cloud benefits          | Org can use the skills and expertise of the cloud provider to ensure workloads are made secure and highly available |
+| Productivity            |          Users can focus on application development only, because the cloud provider handles all platform           |
+
+| Disadvantage         |                                         Description                                         |
+| :------------------- | :-----------------------------------------------------------------------------------------: |
+| Platform limitations | There can be some limitations to a cloud platform that might affect how an application runs |
+
+## Software-as-a-Service (SaaS)
+
+- <b> Cloud provider</b> manages all aspects of the application environment, such
+  as virtual machines, networking resources, data storage, and applications.
+- <b> Cloud tenant</b> only needs to provide their data to the application managed
+  by the cloud provider.
+
+| Advantages                  |                                                              Description                                                               |
+| :-------------------------- | :------------------------------------------------------------------------------------------------------------------------------------: |
+| No CapEx                    |                                                      Users have no up-front costs                                                      |
+| Agility                     |                    PaaS is more agile than IaaS, and users don't need to configure servers for running applications                    |
+| Pay-as-you-go pricing model | Users pay for the software they use on a subscription model, typically monthly or yearly, regardless of how much they use the software |
+| Skills                      |                                                 No deep technical skills are required                                                  |
+| Flexibility                 |                                        Users can access the same application data from anywhere                                        |
+
+| Disadvantage         |                                       Description                                        |
+| :------------------- | :--------------------------------------------------------------------------------------: |
+| Software limitations | There can be some limitations to a software application that might affect how users work |
+
+## Cloud service model comparison
+
+| IaaS                                                       |                         PaaS                         |                                                        SaaS |
+| :--------------------------------------------------------- | :--------------------------------------------------: | ----------------------------------------------------------: |
+| The most flexible cloud service                            |           Focus on application development           |                                 Pay-as-you-go pricing model |
+| You configure and manage the hardware for your application | Platform management is handled by the cloud provider | Users pay for the software they use on a subscription model |
+
+## What is serverless computing ?
+
+- Like PaaS, serverless computing enables developers to build applications faster by eliminating the need for them to manage infrastructure.
+- Cloud service provider automatically provisions, scales, and manages the infrastructure required to run the code.
+- Serverless architectures are highly scalable and event-driven, only using resources when a specific function or trigger occurs.
