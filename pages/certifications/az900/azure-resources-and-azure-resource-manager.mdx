@@ -1,0 +1,53 @@
+import { Callout } from 'nextra/components'
+ 
+<Callout type="info" emoji="ℹ️">
+  Resource : A manageable item that's available through Azure (e.g: VMs, storage accounts, web apps etc...)
+</Callout>
+
+<Callout type="info" emoji="ℹ️">
+  Resource group : A container that holds related resources for an Azure solution. You decide which resources belong in a resource group based on what makes the most sense for your organization.
+</Callout>
+
+### Azure resources groups 
+- All resources must be in a resource group.
+- A resource can only be a member of a single resource group.
+- Many resource can be moved between resource groups.
+- Resource groups can't be nested.
+- <b> Before any resource can be provisioned, you need a resource group for it to be placed in</b>.
+
+### Logical grouping
+- By placing resource of similar usage, type, or location in a resource group, you can provide order and organization to resources you create in Azure.
+- Logical grouping is the aspect that you're most interested in here, because there's a lot of disorder among our resources.
+
+### Lifecycle
+- If you delete a resource group, all resources contained within it are also deleted
+- Organizing resources by life cycle can be useful in non-production environments, where you might try an experiment and then dispose it.
+- Resource groups make it easy to remove a set of resources all at once.
+
+### Authorization 
+- Resource groups are also a scope for applying role-based access control (RBAC)
+
+### Azure Resource Manager
+<Callout type="info" emoji="ℹ️">
+  Azure Resource Manager is the deployment and management service for Azure.
+</Callout>
+- it provides a management layer that enabled you to create, update, and delete resources in your Azure account.
+- you use management features like :
+    - access control
+    - locks
+    - and tags
+to secure and organize your resrouces after deployment
+
+- When a user sends a request.
+- Resource Manager receives the request.
+- It authenticates and authorizes the request.
+- Resource Manager sends the request to the Azure service.
+- Azure service takes the requested actions.
+
+### The benefits of using Resource Manager :
+- Manage your infrastructure through declarative templates rather than scripts.
+- A Resource Manager template is a JSON file that defines what you want to deploy to Azure.
+- Deploy, manage and monitor all the resources for your solution as a group, rather that handling these resources individually.
+- Redeploy your solution throughout the development lifecycle.
+- Apply access control to all services because RBAC is natively integrated into the management platform.
+- Clarify your organization's billing by viewing costs for a group of resources that share the same tag.
