@@ -1,0 +1,25 @@
+import { Callout } from 'nextra/components'
+
+## Azure Subscriptions
+
+- This provides you with authenticated and authorized access to Azure products and services.
+- Allow you to provision resources.
+- Logical unit of Azure services that links to an Azure account, which is an identity in Azure Active Directory (Azure AD).
+- An account can have one subscriptions or multiple subscriptions that have different billing models and to which you apply different access-management policies.
+- You can use Azure subscriptions to define boundaries that you can use : 
+- Biling boundary : 
+    - This subscription determines how an Azure account is billed for using Azure.
+        - can create multiple subscriptions for different types of billing requirements
+        - generates separate billing reports and invoices for each subscription so that you can organize and manage costs.
+    - Access control boundary : 
+        - Azure applies access-management policies at the subscription level
+        - Can create separate subscriptions to reflect different organizational structures
+<Callout type="info" emoji="ℹ️">
+  Example : Within a business you have different departments to which you apply distinct Azure subscription policies. This billing model allows you to manage and control access to the the resources that users create within specific subscriptions. 
+</Callout>
+
+### Create additional Azure Subscriptions
+
+- <b>Environments</b> : When managing your resources, you can choose to create subscriptions to set up separate environments for development and testings, security, or to isolate data for compliance reasons.
+- <b>Organizational structures</b> : You can create subscriptions to reflect different organizational structures. This design allows you to management and control access to the resources that users can create within each subscription.
+- <b>Billing</b> : You might want to also create additional subscriptions for billing purposes.
